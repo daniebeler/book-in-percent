@@ -1,0 +1,7 @@
+{
+  "name": "book-in-percent",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
