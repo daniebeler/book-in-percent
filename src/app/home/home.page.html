@@ -1,11 +1,11 @@
 <ion-content [fullscreen]="true">
 
-  <ion-grid style="height: 100%;">
+  <ion-grid style="height: 100%;" [fixed]="true">
     <ion-row style="height: 100%; display: flex; align-items: center;">
       <ion-col>
         <ion-range (ionChange)="onIonChange($event)" [min]="0" [max]="totalPages"></ion-range>
         <br>
-        <h1 style="text-align: center">{{lastEmittedValue}}</h1>
+        <p style="text-align: center">{{lastEmittedValue}}<span class="total-pages-span">/{{totalPages}}</span></p>
         <h1 style="text-align: center;">{{percentage}}%</h1>
       </ion-col>
     </ion-row>
